@@ -1,0 +1,7 @@
+Considering what’s inside the box, four distinct components are required to deploy
+an S3 backend:
+- DynamoDB table — For state locking.
+- S3 bucket and Key Management Service (KMS) key — For state storage and encryption at rest.
+- Identity and Access Management (IAM) least-privileged role — So other AWS accounts can assume a role 
+to this account and perform deployments against the S3 backend.
+- Miscellaneous housekeeping resources
